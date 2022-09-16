@@ -1,0 +1,15 @@
+{
+    "prefill": {
+        "name": "Test One",
+        "phone": "+919654900585",
+        "email": "shruti.dixit@zoksh.com"
+    },
+    "amount": "1",
+    "token": "",
+    "label": "PICASO",
+    "merchant": {
+        "desc": "PayForPicaso",
+        "extra": "Originally painted by picaso",
+        "orderId": "0"
+    }
+}
