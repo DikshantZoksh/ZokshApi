@@ -7,14 +7,16 @@
 
 // StrpostBody = JSON.parse(JSON.stringify(order));
 
-// const requestapi = {
+// console.log(StrpostBody.length)
 
-//   url: '/v2/order',
-//   method: 'POST',
-//   body: require('../testdata/TestData.json'),
-//   headers: {}
+//    const requestapi = {
+//     url: '/v2/order',
+//     method: 'POST',
+//     body: StrpostBody[0],
+//     headers: {}
 
-// };
+//   };
+
 
 // describe('Zoksh OrderCreation API Tests', () => {
 
@@ -22,17 +24,18 @@
 //   let zokshts
 //   let zokshsign
   
-//   before(() => {
+//   beforeEach(() => {
 //     let authHeaders = generateRequestAuthHeaders(requestapi, apiAuth, versions);
 //     //? request.headers = {...request.headers, ...authHeaders}
 //     zokshkey = authHeaders['zoksh-key'];
 //     zokshts = authHeaders['zoksh-ts'];
 //     zokshsign = authHeaders['zoksh-sign'];
+
 //   })
   
   
-//   it('TC-01 : Token - NA : No Specified chain or currency : Should successfully create a order', (done) => {
-    
+//   it('TC-01 : Token - NA : No Specified chain or currency', (done) => {
+      
 //     request(baseurl)
 //       .post(requestapi.url)
 //       //.get('/?order=62c764a3eed0eefdac0041b8?debug=true')
@@ -132,7 +135,4 @@
 //       });
 //   }).timeout(10000);
 
-
-
-  
 // });
