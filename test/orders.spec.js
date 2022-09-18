@@ -66,7 +66,7 @@ describe('Zoksh OrderCreation API Tests', () => {
       });
   }).timeout(10000);
 
-  it('TC-02 : Token - NA : Prefill - All Blank : No Specified chain or currency : Should successfully create a order', (done) => {
+  it('TC-02 : Token - NA : Prefill - All Blank : No Specified chain or currency', (done) => {
     request(baseurl)
       .post(requestapi.url)
       .send(requestapi.body)
@@ -90,7 +90,7 @@ describe('Zoksh OrderCreation API Tests', () => {
       });
   }).timeout(10000);
 
-  it('TC-03 : Token - NA : Prefill - Phone, Email - Blank : No Specified chain or currency : Should successfully create a order', (done) => {
+  it('TC-03 : Token - NA : Prefill - Phone, Email - Blank : No Specified chain or currency', (done) => {
     request(baseurl)
       .post(requestapi.url)
       .send(requestapi.body)
@@ -114,7 +114,7 @@ describe('Zoksh OrderCreation API Tests', () => {
       });
   }).timeout(10000);
 
-  it('TC-04 : Token - NA : Prefill - Name, Email - Blank : No Specified chain or currency : Should successfully create a order', (done) => {
+  it('TC-04 : Token - NA : Prefill - Name, Email - Blank : No Specified chain or currency', (done) => {
     request(baseurl)
       .post(requestapi.url)
       .send(requestapi.body)
@@ -138,7 +138,7 @@ describe('Zoksh OrderCreation API Tests', () => {
       });
   }).timeout(10000);
 
-  it('TC-05 : Name,Phone,Amount - NA : No Specified chain or currency : Should successfully create a order', (done) => {
+  it('TC-05 : Name,Phone - Blank : No Specified chain or currency', (done) => {
     request(baseurl)
       .post(requestapi.url)
       .send(requestapi.body)
@@ -165,7 +165,141 @@ describe('Zoksh OrderCreation API Tests', () => {
       });
   }).timeout(10000);
 
+  it('TC-06 : Name,Phone,Label - Blank : No Specified chain or currency', (done) => {
+    request(baseurl)
+      .post(requestapi.url)
+      .send(requestapi.body)
+      .set('Accept', 'application/json')
+      .set('Content-Type', 'application/json')
+      .set('zoksh-key', zokshkey)
+      .set('zoksh-ts', zokshts)
+      .set('zoksh-sign', zokshsign)
+      .end(function (err, res) {
+        if (err) {
+          throw err;
+        }
+        expect(res.statusCode).to.be.equal(200);
+        expect(res.body.orderId).to.be.not.null;
+        expect(res.body.url).to.be.not.null;
+        str_ordrId = res.body.orderId 
+        val_url = res.body.url
+        console.log(typeof(val_url))
+        console.log(typeof(str_ordrId))
+        //console.log(str_ordrId)
+        expect(res.body.url).contains(str_ordrId)
+        console.log(JSON.stringify(res.body));
+        done();
+      });
+  }).timeout(10000);
 
+  it('TC-07 : Name,Phone,Description - Blank : No Specified chain or currency', (done) => {
+    request(baseurl)
+      .post(requestapi.url)
+      .send(requestapi.body)
+      .set('Accept', 'application/json')
+      .set('Content-Type', 'application/json')
+      .set('zoksh-key', zokshkey)
+      .set('zoksh-ts', zokshts)
+      .set('zoksh-sign', zokshsign)
+      .end(function (err, res) {
+        if (err) {
+          throw err;
+        }
+        expect(res.statusCode).to.be.equal(200);
+        expect(res.body.orderId).to.be.not.null;
+        expect(res.body.url).to.be.not.null;
+        str_ordrId = res.body.orderId 
+        val_url = res.body.url
+        console.log(typeof(val_url))
+        console.log(typeof(str_ordrId))
+        //console.log(str_ordrId)
+        expect(res.body.url).contains(str_ordrId)
+        console.log(JSON.stringify(res.body));
+        done();
+      });
+  }).timeout(10000);
+
+  it('TC-08 : Name,Phone,Extra - Blank : No Specified chain or currency', (done) => {
+    request(baseurl)
+      .post(requestapi.url)
+      .send(requestapi.body)
+      .set('Accept', 'application/json')
+      .set('Content-Type', 'application/json')
+      .set('zoksh-key', zokshkey)
+      .set('zoksh-ts', zokshts)
+      .set('zoksh-sign', zokshsign)
+      .end(function (err, res) {
+        if (err) {
+          throw err;
+        }
+        expect(res.statusCode).to.be.equal(200);
+        expect(res.body.orderId).to.be.not.null;
+        expect(res.body.url).to.be.not.null;
+        str_ordrId = res.body.orderId 
+        val_url = res.body.url
+        console.log(typeof(val_url))
+        console.log(typeof(str_ordrId))
+        //console.log(str_ordrId)
+        expect(res.body.url).contains(str_ordrId)
+        console.log(JSON.stringify(res.body));
+        done();
+      });
+  }).timeout(10000);
+
+  it('TC-09 : Name,Phone.OrderID - Blank : No Specified chain or currency', (done) => {
+    request(baseurl)
+      .post(requestapi.url)
+      .send(requestapi.body)
+      .set('Accept', 'application/json')
+      .set('Content-Type', 'application/json')
+      .set('zoksh-key', zokshkey)
+      .set('zoksh-ts', zokshts)
+      .set('zoksh-sign', zokshsign)
+      .end(function (err, res) {
+        if (err) {
+          throw err;
+        }
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+  }).timeout(10000);
+
+  it('TC-10 : Fiat - Blank : No Specified chain or currency', (done) => {
+    request(baseurl)
+      .post(requestapi.url)
+      .send(requestapi.body)
+      .set('Accept', 'application/json')
+      .set('Content-Type', 'application/json')
+      .set('zoksh-key', zokshkey)
+      .set('zoksh-ts', zokshts)
+      .set('zoksh-sign', zokshsign)
+      .end(function (err, res) {
+        if (err) {
+          throw err;
+        }
+        expect(res.statusCode).to.be.equal(500);
+        console.log(JSON.stringify(res.body));
+        done();
+      });
+  }).timeout(10000);
+
+  it('TC-11 : name, phone, email, fiat, label, desc, extra - Blank :  No Specified chain or currency', (done) => {
+    request(baseurl)
+      .post(requestapi.url)
+      .send(requestapi.body)
+      .set('Accept', 'application/json')
+      .set('Content-Type', 'application/json')
+      .set('zoksh-key', zokshkey)
+      .set('zoksh-ts', zokshts)
+      .set('zoksh-sign', zokshsign)
+      .end(function (err, res) {
+        if (err) {
+          throw err;
+        }
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+  }).timeout(10000);
 
 
 });
