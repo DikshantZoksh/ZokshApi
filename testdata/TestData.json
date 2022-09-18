@@ -61,6 +61,25 @@
             "extra": "Originally painted by picaso",
             "orderId": "0"
         }
+    },
+
+    {
+        "prefill": {
+            "name": "",
+            "phone": "",
+            "email": "dikshant.agarwal@moopay.com"
+        },
+        "amount": "1",
+        "token": "MATIC",
+        "label": "PICASO",
+        "merchant": {
+            "desc": "PayForPicaso",
+            "extra": "Originally painted by picaso",
+            "orderId": "0"
+        }
     }
+
+
+
 
 ]
