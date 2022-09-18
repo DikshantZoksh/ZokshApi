@@ -1,21 +1,55 @@
-{"orderId":"6324865dfff95d5e8d67d6c3","createdAt":1663338077535,"url":"https://pay.testnet.zoksh.com/?order=MPO-6324865dfff95d5e8d67d6c3"}
+6326cc88de4f4e27a9b514f4
+{"orderId":"6326cc88de4f4e27a9b514f4","createdAt":1663487112338,"url":"https://pay.testnet.zoksh.com/?order=MPO-6326cc88de4f4e27a9b514f4"}
+6326cc89de4f4e27a9b514f5
+{"orderId":"6326cc89de4f4e27a9b514f5","createdAt":1663487113030,"url":"https://pay.testnet.zoksh.com/?order=MPO-6326cc89de4f4e27a9b514f5"}
+6326cc89de4f4e27a9b514f6
+{"orderId":"6326cc89de4f4e27a9b514f6","createdAt":1663487113713,"url":"https://pay.testnet.zoksh.com/?order=MPO-6326cc89de4f4e27a9b514f6"}
+6326cc8ade4f4e27a9b514f7
+{"orderId":"6326cc8ade4f4e27a9b514f7","createdAt":1663487114419,"url":"https://pay.testnet.zoksh.com/?order=MPO-6326cc8ade4f4e27a9b514f7"}
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 4,
+    "tests": 4,
+    "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2022-09-16T14:21:16.578Z",
-    "end": "2022-09-16T14:21:17.372Z",
-    "duration": 794
+    "start": "2022-09-18T07:45:11.415Z",
+    "end": "2022-09-18T07:45:14.192Z",
+    "duration": 2777
   },
   "tests": [
     {
-      "title": "Should successfully create a order",
-      "fullTitle": "Zoksh OrderCreation API Tests Should successfully create a order",
-      "file": "/Users/livelifelively/dev/moopay/ZokshApi/test/orders.spec.js",
-      "duration": 788,
+      "title": "TC-01 : Token - NA : No Specified chain or currency : Should successfully create a order",
+      "fullTitle": "Zoksh OrderCreation API Tests TC-01 : Token - NA : No Specified chain or currency : Should successfully create a order",
+      "file": "/Users/dikshant.agarwal/Documents/POC/test/TC01.spec.js",
+      "duration": 699,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "TC-02 : Token - NA : Prefill - All Blank : No Specified chain or currency : Should successfully create a order",
+      "fullTitle": "Zoksh OrderCreation API Tests TC-02 : Token - NA : Prefill - All Blank : No Specified chain or currency : Should successfully create a order",
+      "file": "/Users/dikshant.agarwal/Documents/POC/test/TC02.spec.js",
+      "duration": 680,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "TC-03 : Token - NA : Prefill - Phone, Email - Blank : No Specified chain or currency",
+      "fullTitle": "Zoksh OrderCreation API Tests TC-03 : Token - NA : Prefill - Phone, Email - Blank : No Specified chain or currency",
+      "file": "/Users/dikshant.agarwal/Documents/POC/test/TC03.spec.js",
+      "duration": 685,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "TC-04 : Token - NA : Prefill - Name, Email - Blank : No Specified chain or currency",
+      "fullTitle": "Zoksh OrderCreation API Tests TC-04 : Token - NA : Prefill - Name, Email - Blank : No Specified chain or currency",
+      "file": "/Users/dikshant.agarwal/Documents/POC/test/TC04.spec.js",
+      "duration": 705,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -25,10 +59,37 @@
   "failures": [],
   "passes": [
     {
-      "title": "Should successfully create a order",
-      "fullTitle": "Zoksh OrderCreation API Tests Should successfully create a order",
-      "file": "/Users/livelifelively/dev/moopay/ZokshApi/test/orders.spec.js",
-      "duration": 788,
+      "title": "TC-01 : Token - NA : No Specified chain or currency : Should successfully create a order",
+      "fullTitle": "Zoksh OrderCreation API Tests TC-01 : Token - NA : No Specified chain or currency : Should successfully create a order",
+      "file": "/Users/dikshant.agarwal/Documents/POC/test/TC01.spec.js",
+      "duration": 699,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "TC-02 : Token - NA : Prefill - All Blank : No Specified chain or currency : Should successfully create a order",
+      "fullTitle": "Zoksh OrderCreation API Tests TC-02 : Token - NA : Prefill - All Blank : No Specified chain or currency : Should successfully create a order",
+      "file": "/Users/dikshant.agarwal/Documents/POC/test/TC02.spec.js",
+      "duration": 680,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "TC-03 : Token - NA : Prefill - Phone, Email - Blank : No Specified chain or currency",
+      "fullTitle": "Zoksh OrderCreation API Tests TC-03 : Token - NA : Prefill - Phone, Email - Blank : No Specified chain or currency",
+      "file": "/Users/dikshant.agarwal/Documents/POC/test/TC03.spec.js",
+      "duration": 685,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "TC-04 : Token - NA : Prefill - Name, Email - Blank : No Specified chain or currency",
+      "fullTitle": "Zoksh OrderCreation API Tests TC-04 : Token - NA : Prefill - Name, Email - Blank : No Specified chain or currency",
+      "file": "/Users/dikshant.agarwal/Documents/POC/test/TC04.spec.js",
+      "duration": 705,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}

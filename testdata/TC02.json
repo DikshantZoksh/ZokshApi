@@ -1,0 +1,15 @@
+{
+    "prefill": {
+        "name": "",
+        "phone": "",
+        "email": ""
+    },
+    "amount": "1",
+    "token": "",
+    "label": "",
+    "merchant": {
+        "desc": "",
+        "extra": "",
+        "orderId": "0"
+    }
+}

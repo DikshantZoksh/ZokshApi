@@ -1,8 +1,8 @@
 {
     "prefill": {
         "name": "Test One",
-        "phone": "+919654900585",
-        "email": "shruti.dixit@zoksh.com"
+        "phone": "",
+        "email": ""
     },
     "amount": "1",
     "token": "",
