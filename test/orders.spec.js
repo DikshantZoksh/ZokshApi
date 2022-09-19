@@ -5,7 +5,7 @@ const order = require('../testdata/TestData.json');
 const environments = require('../environments')
 const {baseurl, apiAuth, versions} = environments.testnet
 
-StrpostBody = JSON.parse(JSON.stringify(order));
+post_Body = JSON.parse(JSON.stringify(order));
 
 let requestapi = {} ;
 let count = 0;
@@ -19,14 +19,14 @@ describe('Zoksh OrderCreation API Tests', () => {
   beforeEach(() => {
 
     console.log("BeforeEach Hook started :" + count)
-    StrpostBody = JSON.parse(JSON.stringify(order));
+    post_Body = JSON.parse(JSON.stringify(order));
     count = count + 1 ;
     //console.log("Test Flag " + count)
 
       requestapi = {
       url: '/v2/order',
       method: 'POST',
-      body: StrpostBody[count - 1],
+      body: post_Body[count - 1],
       headers: {}
   
     };
@@ -246,7 +246,7 @@ describe('Zoksh OrderCreation API Tests', () => {
       });
   }).timeout(10000);
 
-  it('TC-09 : Name,Phone.OrderID - Blank : No Specified chain or currency', (done) => {
+  it('TC-09 : Name,Phone,OrderID - Blank : No Specified chain or currency', (done) => {
     request(baseurl)
       .post(requestapi.url)
       .send(requestapi.body)
@@ -283,7 +283,7 @@ describe('Zoksh OrderCreation API Tests', () => {
       });
   }).timeout(10000);
 
-  it('TC-11 : name, phone, email, fiat, label, desc, extra - Blank :  No Specified chain or currency', (done) => {
+  it('TC-11 : Name, phone, email, fiat, label, desc, extra - Blank :  No Specified chain or currency', (done) => {
     request(baseurl)
       .post(requestapi.url)
       .send(requestapi.body)
@@ -300,6 +300,43 @@ describe('Zoksh OrderCreation API Tests', () => {
         done();
       });
   }).timeout(10000);
+
+  it('TC-12 : phone, email, fiat- NA , No Specified chain or currency', (done) => {
+    request(baseurl)
+      .post(requestapi.url)
+      .send(requestapi.body)
+      .set('Accept', 'application/json')
+      .set('Content-Type', 'application/json')
+      .set('zoksh-key', zokshkey)
+      .set('zoksh-ts', zokshts)
+      .set('zoksh-sign', zokshsign)
+      .end(function (err, res) {
+        if (err) {
+          throw err;
+        }
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+  }).timeout(10000);
+
+  it('TC-13 : phone, email, fiat- NA , No Specified chain or currency', (done) => {
+    request(baseurl)
+      .post(requestapi.url)
+      .send(requestapi.body)
+      .set('Accept', 'application/json')
+      .set('Content-Type', 'application/json')
+      .set('zoksh-key', zokshkey)
+      .set('zoksh-ts', zokshts)
+      .set('zoksh-sign', zokshsign)
+      .end(function (err, res) {
+        if (err) {
+          throw err;
+        }
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+  }).timeout(10000);
+
 
 
 });
