@@ -1,27 +1,27 @@
 BeforeEach Hook started :0
-{"orderId":"63284e73f757576992a42abd","createdAt":1663585907357,"url":"https://pay.testnet.zoksh.com/?order=MPO-63284e73f757576992a42abd"}
+{"orderId":"632c511c421e495800c3e99b","createdAt":1663848732279,"url":"https://pay.testnet.zoksh.com/?order=MPO-632c511c421e495800c3e99b"}
 BeforeEach Hook started :1
-{"orderId":"63284e74f757576992a42abe","createdAt":1663585908028,"url":"https://pay.testnet.zoksh.com/?order=MPO-63284e74f757576992a42abe"}
+{"orderId":"632c511c421e495800c3e99c","createdAt":1663848732967,"url":"https://pay.testnet.zoksh.com/?order=MPO-632c511c421e495800c3e99c"}
 BeforeEach Hook started :2
-{"orderId":"63284e74f757576992a42abf","createdAt":1663585908694,"url":"https://pay.testnet.zoksh.com/?order=MPO-63284e74f757576992a42abf"}
+{"orderId":"632c511d421e495800c3e99d","createdAt":1663848733640,"url":"https://pay.testnet.zoksh.com/?order=MPO-632c511d421e495800c3e99d"}
 BeforeEach Hook started :3
-{"orderId":"63284e75f757576992a42ac0","createdAt":1663585909372,"url":"https://pay.testnet.zoksh.com/?order=MPO-63284e75f757576992a42ac0"}
+{"orderId":"632c511e421e495800c3e99e","createdAt":1663848734317,"url":"https://pay.testnet.zoksh.com/?order=MPO-632c511e421e495800c3e99e"}
 BeforeEach Hook started :4
 string
 string
-{"orderId":"63284e76f757576992a42ac1","createdAt":1663585910041,"url":"https://pay.testnet.zoksh.com/?order=MPO-63284e76f757576992a42ac1"}
+{"orderId":"632c511f421e495800c3e99f","createdAt":1663848735005,"url":"https://pay.testnet.zoksh.com/?order=MPO-632c511f421e495800c3e99f"}
 BeforeEach Hook started :5
 string
 string
-{"orderId":"63284e76f757576992a42ac2","createdAt":1663585910719,"url":"https://pay.testnet.zoksh.com/?order=MPO-63284e76f757576992a42ac2"}
+{"orderId":"632c511f421e495800c3e9a0","createdAt":1663848735693,"url":"https://pay.testnet.zoksh.com/?order=MPO-632c511f421e495800c3e9a0"}
 BeforeEach Hook started :6
 string
 string
-{"orderId":"63284e77f757576992a42ac3","createdAt":1663585911402,"url":"https://pay.testnet.zoksh.com/?order=MPO-63284e77f757576992a42ac3"}
+{"orderId":"632c5120421e495800c3e9a1","createdAt":1663848736381,"url":"https://pay.testnet.zoksh.com/?order=MPO-632c5120421e495800c3e9a1"}
 BeforeEach Hook started :7
 string
 string
-{"orderId":"63284e78f757576992a42ac4","createdAt":1663585912071,"url":"https://pay.testnet.zoksh.com/?order=MPO-63284e78f757576992a42ac4"}
+{"orderId":"632c5121421e495800c3e9a2","createdAt":1663848737057,"url":"https://pay.testnet.zoksh.com/?order=MPO-632c5121421e495800c3e9a2"}
 BeforeEach Hook started :8
 BeforeEach Hook started :9
 {}
@@ -35,16 +35,16 @@ BeforeEach Hook started :12
     "passes": 13,
     "pending": 0,
     "failures": 0,
-    "start": "2022-09-19T11:11:46.550Z",
-    "end": "2022-09-19T11:11:55.308Z",
-    "duration": 8758
+    "start": "2022-09-22T12:12:11.530Z",
+    "end": "2022-09-22T12:12:20.609Z",
+    "duration": 9079
   },
   "tests": [
     {
       "title": "TC-01 : Token - NA : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-01 : Token - NA : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 736,
+      "duration": 699,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -53,7 +53,7 @@ BeforeEach Hook started :12
       "title": "TC-02 : Token - NA : Prefill - All Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-02 : Token - NA : Prefill - All Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 655,
+      "duration": 676,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -71,7 +71,7 @@ BeforeEach Hook started :12
       "title": "TC-04 : Token - NA : Prefill - Name, Email - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-04 : Token - NA : Prefill - Name, Email - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 675,
+      "duration": 684,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -80,7 +80,7 @@ BeforeEach Hook started :12
       "title": "TC-05 : Name,Phone - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-05 : Name,Phone - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 671,
+      "duration": 687,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -89,7 +89,7 @@ BeforeEach Hook started :12
       "title": "TC-06 : Name,Phone,Label - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-06 : Name,Phone,Label - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 678,
+      "duration": 697,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -98,7 +98,7 @@ BeforeEach Hook started :12
       "title": "TC-07 : Name,Phone,Description - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-07 : Name,Phone,Description - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 678,
+      "duration": 676,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -107,7 +107,7 @@ BeforeEach Hook started :12
       "title": "TC-08 : Name,Phone,Extra - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-08 : Name,Phone,Extra - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 661,
+      "duration": 708,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -116,7 +116,7 @@ BeforeEach Hook started :12
       "title": "TC-09 : Name,Phone,OrderID - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-09 : Name,Phone,OrderID - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 649,
+      "duration": 690,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -125,7 +125,7 @@ BeforeEach Hook started :12
       "title": "TC-10 : Fiat - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-10 : Fiat - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 684,
+      "duration": 861,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -134,7 +134,7 @@ BeforeEach Hook started :12
       "title": "TC-11 : Name, phone, email, fiat, label, desc, extra - Blank :  No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-11 : Name, phone, email, fiat, label, desc, extra - Blank :  No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 647,
+      "duration": 690,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -143,7 +143,7 @@ BeforeEach Hook started :12
       "title": "TC-12 : phone, email, fiat- NA , No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-12 : phone, email, fiat- NA , No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 660,
+      "duration": 666,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -152,7 +152,7 @@ BeforeEach Hook started :12
       "title": "TC-13 : phone, email, fiat- NA , No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-13 : phone, email, fiat- NA , No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 671,
+      "duration": 662,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -165,7 +165,7 @@ BeforeEach Hook started :12
       "title": "TC-01 : Token - NA : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-01 : Token - NA : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 736,
+      "duration": 699,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -174,7 +174,7 @@ BeforeEach Hook started :12
       "title": "TC-02 : Token - NA : Prefill - All Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-02 : Token - NA : Prefill - All Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 655,
+      "duration": 676,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -192,7 +192,7 @@ BeforeEach Hook started :12
       "title": "TC-04 : Token - NA : Prefill - Name, Email - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-04 : Token - NA : Prefill - Name, Email - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 675,
+      "duration": 684,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -201,7 +201,7 @@ BeforeEach Hook started :12
       "title": "TC-05 : Name,Phone - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-05 : Name,Phone - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 671,
+      "duration": 687,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -210,7 +210,7 @@ BeforeEach Hook started :12
       "title": "TC-06 : Name,Phone,Label - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-06 : Name,Phone,Label - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 678,
+      "duration": 697,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -219,7 +219,7 @@ BeforeEach Hook started :12
       "title": "TC-07 : Name,Phone,Description - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-07 : Name,Phone,Description - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 678,
+      "duration": 676,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -228,7 +228,7 @@ BeforeEach Hook started :12
       "title": "TC-08 : Name,Phone,Extra - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-08 : Name,Phone,Extra - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 661,
+      "duration": 708,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -237,7 +237,7 @@ BeforeEach Hook started :12
       "title": "TC-09 : Name,Phone,OrderID - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-09 : Name,Phone,OrderID - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 649,
+      "duration": 690,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -246,7 +246,7 @@ BeforeEach Hook started :12
       "title": "TC-10 : Fiat - Blank : No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-10 : Fiat - Blank : No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 684,
+      "duration": 861,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -255,7 +255,7 @@ BeforeEach Hook started :12
       "title": "TC-11 : Name, phone, email, fiat, label, desc, extra - Blank :  No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-11 : Name, phone, email, fiat, label, desc, extra - Blank :  No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 647,
+      "duration": 690,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -264,7 +264,7 @@ BeforeEach Hook started :12
       "title": "TC-12 : phone, email, fiat- NA , No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-12 : phone, email, fiat- NA , No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 660,
+      "duration": 666,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
@@ -273,7 +273,7 @@ BeforeEach Hook started :12
       "title": "TC-13 : phone, email, fiat- NA , No Specified chain or currency",
       "fullTitle": "Zoksh OrderCreation API Tests TC-13 : phone, email, fiat- NA , No Specified chain or currency",
       "file": "/Users/dikshant.agarwal/Documents/POC/test/orders.spec.js",
-      "duration": 671,
+      "duration": 662,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
